@@ -4,6 +4,7 @@
     padding: 10px;
     display: flex;
     border-radius: 50px;
+    align-items: center;
   }
 
 .item {
@@ -15,10 +16,21 @@
   text-decoration: none;
   color: whitesmoke;;
   display: block;
-  text-align: center;
   padding: 14px 16px;
 }
 
-.item a :hover {
-  background-color: black;
+.item :hover {
+  color: black;
+}
+
+.login {
+  text-align: right;
+}
+
+.loginBtn {
+  text-align: center;
+}
+
+.login :hover {
+  border: 1px solid black
 }

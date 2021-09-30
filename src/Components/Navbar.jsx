@@ -20,6 +20,19 @@ const Navbar = () => {
             <div className={navbarCss.item}>
                 <a href='#'>Setting</a>
             </div>
+            <div className={navbarCss.login}>
+                <input type="text" className={navbarCss.loginBtn}/>
+                <br/>
+                <input
+                    type="password"
+                    name="password"
+                    id="passwordBtn"
+                    className={navbarCss.PasswordBtn}    
+                />
+                <br />
+                <button className={navbarCss.confirmBtn}>Login</button>
+
+            </div>
         </nav>
     )
 }

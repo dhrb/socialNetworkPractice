@@ -2,7 +2,7 @@
     grid-area: h;
     background-color: green;
     border-radius: 20px;
-    text-align: center;
+    align-items: center;
   }
 
 .image {
