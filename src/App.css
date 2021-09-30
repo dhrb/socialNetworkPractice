@@ -1,28 +1,13 @@
 .app-wrapper {
   display: grid;
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
+  grid-template-rows: 70px 1fr;
+  grid-template-columns: 2fr 15fr;
   grid-template-areas: 
-  "h h"
-  "n c";
-}
+  "h n"
+  "c c";
 
-.header {
-  grid-area: h;
-  background-color: green;
-}
-
-.header img {
-  width: 50px;
-  height: 50px;
-}
-
-.nav {
-  grid-area: n;
-  background-color: burlywood;
-}
-
-.content {
-  grid-area: c;
-  background-color: cornflowerblue;
+  margin: 2%;
+  padding: auto;
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 20px;
 }
