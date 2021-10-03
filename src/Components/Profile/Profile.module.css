@@ -1,0 +1,26 @@
+.content {
+    grid-area: c;
+  }
+
+.image {
+  padding-top: 2%;
+  border-radius: 100px;
+  width: 100%;
+  height: 100px;
+}
+
+.avaInfo {
+  width: 100%;
+  height: 25px;
+  padding: 2%;
+  text-align: center;
+  
+}
+
+.myPostItem {
+  width: 100%;
+  background-color: burlywood;
+  border-radius: 40px;
+  text-align: center;
+
+}
