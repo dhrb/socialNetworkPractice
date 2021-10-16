@@ -1,29 +1,28 @@
 import React from 'react'; 
 import navbarCss from './Navbar.module.css'
 
-
 const Navbar = () => {
     return (<div className={navbarCss.mainNav}>
         <nav className={navbarCss.nav}>
 
             <div className={navbarCss.item}>
-                <a href>Profile</a>
+                <a href='/profile'>Profile</a>
             </div>
 
             <div className={navbarCss.item}>
-                <a href>Messages</a>
+                <a href='/dialogs'>Messages</a>
             </div>
 
             <div className={navbarCss.item}>
-                <a href>News</a>
+                <a href='/news'>News</a>
             </div>
 
             <div className={navbarCss.item}>
-                <a href>Music</a>
+                <a href='/music'>Music</a>
             </div>
 
             <div className={navbarCss.item}>
-                <a href>Setting</a>
+                <a href='/setting'>Setting</a>
             </div>
 
             <div className={navbarCss.login}>

@@ -1,7 +1,7 @@
 .app-wrapper {
     display: grid;
-    grid-template-rows: 15% 1fr;
-    grid-template-columns: 2fr 94%;
+    grid-template-rows: 15% 2fr;
+    grid-template-columns: 111px;
     grid-template-areas:
       "h n"
       "c c";
@@ -15,4 +15,5 @@
 .app-wrapper-content {
     grid-area: c;
     background-color: burlywood;
+    width: 100%;
 }
