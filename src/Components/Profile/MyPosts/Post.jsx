@@ -12,7 +12,7 @@ const Post = () => {
             <div className={postCss.user}>
                 <img className={postCss.userImg} src={'https://www.meme-arsenal.com/memes/f897ed14b527e2f2d0b05ee5ad006dee.jpg'} alt='userAvatar' />
                 <p classname={postCss.user}>{props.name}</p>
-                <span></span>
+                <p><time type='datetime-local'>date</time></p>
             </div>
             
         </div>

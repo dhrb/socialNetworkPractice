@@ -1,13 +1,17 @@
 .app-wrapper {
-  display: grid;
-  grid-template-rows: 70px 1fr;
-  grid-template-columns: 2fr 15fr;
-  grid-template-areas: 
-  "h n"
-  "c c";
+    display: grid;
+    grid-template-rows: 15% 1fr;
+    grid-template-columns: 2fr 94%;
+    grid-template-areas:
+      "h n"
+      "c c";
 
-  margin: 2%;
-  padding: auto;
-  font-family: 'Gemunu Libre', sans-serif;
-  font-size: 20px;
+    margin: 3%;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.app-wrapper-content {
+    grid-area: c;
 }

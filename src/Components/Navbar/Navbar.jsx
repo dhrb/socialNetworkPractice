@@ -27,16 +27,23 @@ const Navbar = () => {
             </div>
 
             <div className={navbarCss.login}>
-                <input type="text" className={navbarCss.loginBtn}/>
+                <input 
+                    type="text"
+                    id="loginBtn"
+                    placeholder="put your login here"
+                    className={navbarCss.loginInput}/>
+                    
                 <br/>
+
                 <input
                     type="password"
                     name="password"
                     id="passwordBtn"
-                    className={navbarCss.PasswordBtn}    
+                    placeholder="put your password here"
+                    className={navbarCss.passwordInput}    
                 />
                 <br />
-                <button className={navbarCss.confirmBtn}>Login</button>
+                <button className={navbarCss.loginBtn}>Login</button>
             </div>
         </nav>
     </div>

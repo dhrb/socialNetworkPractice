@@ -1,42 +1,44 @@
 .mainNav {
   grid-area: n;
-  background-color: burlywood;
   border-radius: 50px;
   width: 100%;
+  color: black;
 }
 
 .nav {
-    display: flex;
-    border-radius: 50px;
-    align-items: center;
-    position: fixed;
+  display: flex;
+  width: 80%;
   }
 
-
-.item {
-  padding: 3px;
+.item{
+  width: 20%;
+  height: 30px;
 }
 
 .item a {
   text-decoration: none;
-  color: white;;
-  display: block;
-  padding: 14px 16px;
-  font-size: 26px;
+  color: darkblue;
+  font-size: 22px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 4%;
 }
 
 .item :hover {
   color: black;
+  background-color: #D2B4DE;
+  font-size: 25px;
 }
 
-.login {
-  text-align: right;
-}
-
-.loginBtn {
+.login input {
+  border: 1px black;
+  border-radius: 24px;
   text-align: center;
+  background-color: wheat;
+
 }
 
 .login :hover {
-  border: 1px solid black
+  color: black;
+  background-color: rgb(230, 189, 102);
 }
