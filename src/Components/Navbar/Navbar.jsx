@@ -1,51 +1,50 @@
 import React from 'react'; 
 import navbarCss from './Navbar.module.css'
+import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
-    return (<div className={navbarCss.mainNav}>
+    return (
         <nav className={navbarCss.nav}>
-
             <div className={navbarCss.item}>
-                <a href='/profile'>Profile</a>
+                <NavLink
+                    activeClassName={navbarCss.activeLink}
+                    to='/profile'>
+                    Profile
+                </NavLink>
             </div>
-
             <div className={navbarCss.item}>
-                <a href='/dialogs'>Messages</a>
+                <NavLink
+                    to='/dialogs'
+                    activeClassName={navbarCss.activeLink}
+                >
+                    Dialogs
+                </NavLink>
             </div>
-
             <div className={navbarCss.item}>
-                <a href='/news'>News</a>
+                <NavLink
+                    to='/news'
+                    activeClassName={navbarCss.activeLink}
+                >
+                    News
+                </NavLink>
             </div>
-
             <div className={navbarCss.item}>
-                <a href='/music'>Music</a>
+                <NavLink
+                    to='/music'
+                    activeClassName={navbarCss.activeLink}
+                >
+                    Music
+                </NavLink>
             </div>
-
             <div className={navbarCss.item}>
-                <a href='/setting'>Setting</a>
-            </div>
-
-            <div className={navbarCss.login}>
-                <input 
-                    type="text"
-                    id="loginBtn"
-                    placeholder="put your login here"
-                    className={navbarCss.loginInput}/>
-                    
-                <br/>
-
-                <input
-                    type="password"
-                    name="password"
-                    id="passwordBtn"
-                    placeholder="put your password here"
-                    className={navbarCss.passwordInput}    
-                />
-                <br />
-                <button className={navbarCss.loginBtn}>Login</button>
+                <NavLink
+                    to='/setting'
+                    activeClassName={navbarCss.activeLink}
+                >
+                    Setting
+                </NavLink>
             </div>
         </nav>
-    </div>
     )
 }
 

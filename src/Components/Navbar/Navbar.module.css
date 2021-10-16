@@ -1,11 +1,8 @@
-.mainNav {
+.nav {
   grid-area: n;
   color: black;
   background-color: #D5F5E3;
   height: 65px;
-}
-
-.nav {
   display: flex;
   padding: 1%;
 }
@@ -29,11 +26,10 @@
   border-radius: 25px;
 }
 
-.item a :active {
-  color: black;
+.item a.activeLink {
   background-color: #D2B4DE;
-  font-size: 26px;
   border-radius: 25px;
+  font-size: 26px;
 }
 
 .login input {
