@@ -1,13 +1,14 @@
 .mainNav {
   grid-area: n;
-  border-radius: 50px;
-  width: 100%;
+  width: 100em;
   color: black;
+  background-color: #D5F5E3;
 }
 
 .nav {
   display: flex;
-  width: 80%;
+  padding-top: 2%;
+  width: 75%;
   }
 
 .item{
@@ -20,25 +21,31 @@
   color: darkblue;
   font-size: 22px;
   border: 1px solid black;
-  border-radius: 20px;
   padding: 4%;
 }
 
 .item :hover {
   color: black;
   background-color: #D2B4DE;
-  font-size: 25px;
+  font-size: 26px;
+  border-radius: 25px;
+}
+
+.login {
+  margin-top:-2%;
 }
 
 .login input {
   border: 1px black;
-  border-radius: 24px;
-  text-align: center;
   background-color: wheat;
-
+  text-align: center;
+  width: 120%;
+  height: auto;
+  margin: 2px;
 }
 
 .login :hover {
   color: black;
   background-color: rgb(230, 189, 102);
+  font-size: 15px;
 }
