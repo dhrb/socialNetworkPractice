@@ -1,15 +1,18 @@
-.nav {
-  grid-area: n;
-  color: black;
-  background-color: #D5F5E3;
-  height: 65px;
+.mainNav {
   display: flex;
-  padding: 1%;
+  grid-area: n;
+  width: 100%;
+  align-items: center;
+  padding: 2%;
+  justify-content: space-around;
+  max-height: 100%;
+
 }
 
-.item{
-  width: 20%;
-  height: 30px;
+.nav {
+  color: black;
+  background-color: #D5F5E3;
+
 }
 
 .item a {
@@ -17,10 +20,11 @@
   color: darkblue;
   font-size: 22px;
   border: 1px solid black;
+  padding: 10px;
 }
 
 .item :hover {
-  color: black;
+  color: red;
   background-color: #D2B4DE;
   font-size: 26px;
   border-radius: 25px;

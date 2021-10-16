@@ -5,7 +5,7 @@ import Post from './MyPosts/Post'
 
 const Profile = () => {
     return (
-        <div>
+        <div className={profileCss.profile}>
             <div className={profileCss.profileImage}>
                 <img className={profileCss.image} src='https://mocah.org/thumbs/4562144-simple-simple-background-primary-colors-minimalism-geometry-abstract.png' alt='bgcontentimg'/>
             </div>
