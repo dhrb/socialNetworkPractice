@@ -1,6 +1,5 @@
 .mainNav {
   grid-area: n;
-  width: 100em;
   color: black;
   background-color: #D5F5E3;
 }
@@ -32,20 +31,18 @@
 }
 
 .login {
-  margin-top:-2%;
+  margin-top:-2.5%;
 }
 
 .login input {
   border: 1px black;
   background-color: wheat;
   text-align: center;
-  width: 120%;
-  height: auto;
   margin: 2px;
 }
 
 .login :hover {
   color: black;
   background-color: rgb(230, 189, 102);
-  font-size: 15px;
+  font-size: 14px;
 }
