@@ -1,13 +1,41 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
+    color: black
+}
+
+.dialogs a {
+    text-decoration: none;
+    color: black;
 }
 
 .dialog {
     font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid cadetblue;
 }
 
-.message {
+.dialog :hover {
+    color: gold;
+}
+
+.messages {
     font-size: 20px;
 }
 
+.messageItem {
+    border: 1px solid cadetblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+.messages :hover {
+    color: gold;
+}
+
+.nastya {
+    font-size: 30px;
+    color: red;
+    text-align: center;
+}

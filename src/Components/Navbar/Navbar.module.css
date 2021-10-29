@@ -6,13 +6,13 @@
   padding: 2%;
   justify-content: space-around;
   max-height: 100%;
-
 }
 
 .nav {
   color: black;
   background-color: #D5F5E3;
-
+  border-radius: 25px;
+  margin: 3%;
 }
 
 .item a {
@@ -20,30 +20,18 @@
   color: darkblue;
   font-size: 22px;
   border: 1px solid black;
-  padding: 10px;
+  padding: 5px;
 }
 
 .item :hover {
-  color: red;
   background-color: #D2B4DE;
   font-size: 26px;
   border-radius: 25px;
 }
 
 .item a.activeLink {
+  color: gold;
   background-color: #D2B4DE;
   border-radius: 25px;
   font-size: 26px;
-}
-
-.login input {
-  border: 1px black;
-  background-color: wheat;
-  text-align: center;
-}
-
-.login :hover {
-  color: black;
-  background-color: rgb(230, 189, 102);
-  font-size: 14px;
 }
