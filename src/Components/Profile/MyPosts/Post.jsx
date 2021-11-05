@@ -1,18 +1,27 @@
 import React from "react";
 import postCss from './Post.module.css';
-import profile from './../'
 
-const Post = (props) => {
-    return (<>
+const db = {
+    'name' : "Dmitriy",
+    'surname' : "Horbatiuk"
+}
+
+const Post = () => {
+    return (
         <div className={postCss.post}>
-            <div className={postCss.user}>
-                <img className={postCss.userImg} src={'https://www.meme-arsenal.com/memes/f897ed14b527e2f2d0b05ee5ad006dee.jpg'} alt='userAvatar' />
-                <p classname={postCss.user}>{props.name + ' ' + props.surname}</p>
-                <p><time type='datetime-local'>date</time></p>
+            <div className={postCss.postHeader}>
+                <span>{db.name + ' ' + db.surname}</span>
+                <span> 2 November 10:12PM </span>
             </div>
-            
+            <div className={postCss.postBody}>
+                <p> Some text</p>
+            </div>
+            <div className={postCss.postFooter}>
+                <span>136</span>
+                <button> like </button>
+            </div>
         </div>
-    </>
-    )}
+    )
+}
 
 export default Post;

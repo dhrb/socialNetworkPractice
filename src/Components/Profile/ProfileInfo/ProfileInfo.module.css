@@ -1,6 +1,6 @@
-.profile {
-  text-align: center;
-  padding: 1% 1%;
+.mainInfo {
+  padding: 2%;
+  padding-top: 15px
 }
 
 .userName {
@@ -9,8 +9,8 @@
 
 .userImage {
   height: 50px;
-  width: 80%;
-  padding-top: 1%;
+  width: 40%;
+
 }
 
 .textArea {
@@ -21,9 +21,6 @@
   border-radius: 25px;
   padding: 3% 3%;
   background-color: lightgray;
-}
-
-.newPost {
 }
 
 .postBtn {
