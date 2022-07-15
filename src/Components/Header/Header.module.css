@@ -1,9 +1,90 @@
 .header {
-    grid-area: h;
-    max-height: 100px;
+	grid-area: h;
+    overflow: hidden;
+	background-color: #4a76a8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	width: 100%;
+    height: 48px;
 }
-.image {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+
+.headerLogo {
+    padding-left: 25px;
+}
+
+.logo {
+	width: 33px;
+	padding-left: 450%;
+}
+
+.headerSearch {
+    padding-left: 20%;
+
+}
+
+.headerSearchBox {
+	background-color: #224b7a;
+    position: relative;
+	color: whitesmoke;
+    width: 230px;
+    left: 20%;
+    height: 28px;
+    border: none;
+    border-radius: 14px;
+    padding-left: 10%;
+}
+
+.headerSearchBox::placeholder {
+    padding-left: 20px;
+    color: #8FADC8;
+}
+
+.headerNotifyBell {
+    height: 36px;
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+}
+.notifyBell {
+    width: 35px;
+}
+
+.headerPlayer {
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+}
+
+.playerItem {
+    width: 12px;
+    height: 15px;
+    padding: 2%;
+}
+
+.playerSongName {
+    color: #DAE2EA;
+    padding: 10%;
+}
+
+.headerUserLogin {
+    background-color: #416A9A;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    padding-right: 1%;
+    margin-right: 5%;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+
+.userNameLogin {
+    padding-left: 15px;
+    cursor: pointer;
+
+}
+
+.headerAvatar {
+    cursor: pointer;
 }

@@ -1,45 +1,58 @@
 import React from "react";
-import dialogsCss from './Dialogs.module.css'
-import {NavLink} from "react-router-dom";
-
-
-const DialogItem = (props) => {
-    let path = "/dialogs" + props.id;
-
-    return (
-        <div className={dialogsCss.dialog}>
-            <NavLink to={path}>{props.name}</NavLink>
-        </div>
-    )
-}
-
-const MessageItem = (props) => {
-    return (
-        <div className={dialogsCss.messageItem}>
-                {props.message}
-        </div>
-    )
-}
+import styles from "./Dialogs.module.css";
+import MessageItem from "./Message/MessageItem";
+import DialogItem from "./DialogItem/DialogItem";
+import {addMessageCreator, updateNewMessageCreator} from "../../redux/dialogsReducer";
 
 const Dialogs = (props) => {
-    return (
-        <div className={dialogsCss.dialogs}>
-            <div className={dialogsCss.dialog + '' + dialogsCss.active}>
-                <DialogItem name='Dima' id='1'/>
-                <DialogItem name='Andrey' id='2'/>
-                <DialogItem name='Maks' id='3'/>
-                <DialogItem name='Anton' id='4'/>
-                <DialogItem name='Nikita' id='5'/>
-            </div>
-            <div className={dialogsCss.messages}>
-                <MessageItem message='hello'/>
-                <MessageItem message='its my second message'/>
-                <MessageItem message='hello world'/>
-                <MessageItem message='what about four message'/>
-                <MessageItem message='this is five'/>
-            </div>
-        </div>
-    )
-}
+	const dialogElements = props.state.dialogsPage.dialogsData.map((d) => <DialogItem name={d.name} id={d.id} />);
+	const messageElements = props.state.dialogsPage.messagesData.map((m) => <MessageItem message={m.message} />);
+	
+	const messageArea = React.createRef();
+	const userArea = React.createRef();
+	
+	let addMessage = () => {
+		let text = messageArea.current.value;
+		let user = userArea.current.value;
+		let action = addMessageCreator(text, user);
+		props.dispatch(action)
+	}
+
+	let onDataChange = () => {
+		let text = messageArea.current.value
+		let user = userArea.current.value;
+		let action = updateNewMessageCreator(text, user);
+		props.dispatch(action)
+	}
+
+	return (
+		<div className={styles.dialogs}>
+			<div className={styles.addDialog}>
+				<div className={styles.newMessage}>
+					<textarea
+						className={styles.addUser}
+						value={ props.newUserName }
+						ref={userArea} 
+						onChange={ onDataChange }
+					/>
+					<textarea
+						onChange={ onDataChange }
+						value={props.newMessageText}
+						ref={messageArea}
+					/>
+					<button onClick={ addMessage } >add dialog</button>
+				</div>
+			</div>
+			<div className={styles.dialogsData}>
+				<div className={styles.dialog}>
+					{dialogElements}
+				</div>
+				<div className={styles.message}>
+					{messageElements}
+				</div>
+			</div>
+		</div>
+	);
+};
 
 export default Dialogs;

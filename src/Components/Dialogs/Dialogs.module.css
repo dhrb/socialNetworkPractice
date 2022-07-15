@@ -1,41 +1,65 @@
 .dialogs {
     display: grid;
-    grid-template-columns: 2fr 10fr;
-    color: black
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "addDialog addUser"
+        "dialog message";
+    border: solid 2px black;
 }
 
-.dialogs a {
-    text-decoration: none;
-    color: black;
+.addDialog {
+    grid-area: addDialog;
+    width: 80%;
+    text-align: center;
 }
 
-.dialog {
-    font-size: 20px;
-    padding: 10px;
+.addUser {
+    grid-area: addUser;
+}
+
+.dialogsData {
+    justify-content: center;
+    display: flex;
+}
+
+.dialog{
+    width: 100%;
+    grid-area: dialog;
+    border: 1px red solid;
+}
+
+.addDialog textarea {
     margin: 10px;
-    border: 1px solid cadetblue;
+    width: 50%;
+    height: 40px;
 }
 
-.dialog :hover {
-    color: gold;
+.dialogItem {
+    padding: 5px;
 }
-
-.messages {
-    font-size: 20px;
+.dialog a {
+    text-decoration: none;
+    color: white;
 }
 
 .messageItem {
-    border: 1px solid cadetblue;
-    padding: 10px;
-    margin: 10px;
+    grid-area: message;
+    color: white;
+    padding: 5px;
 }
 
-.messages :hover {
-    color: gold;
+.message {
+    width: 100%;
+    grid-area: message;
+    border: 2px solid blue;
 }
 
-.nastya {
-    font-size: 30px;
-    color: red;
-    text-align: center;
+.message a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    color:gold;
 }

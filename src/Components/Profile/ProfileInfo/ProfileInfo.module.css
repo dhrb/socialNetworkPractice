@@ -1,36 +1,7 @@
-.mainInfo {
-  padding: 2%;
-  padding-top: 15px
+.profileInfoBgImg {
+    width: 50%;
 }
 
-.userName {
-  margin: 2%;
-}
-
-.userImage {
-  height: 50px;
-  width: 40%;
-
-}
-
-.textArea {
-  width: 60%;
-  max-width: 80%;
-  height: 50px;
-  max-height: 150px;
-  border-radius: 25px;
-  padding: 3% 3%;
-  background-color: lightgray;
-}
-
-.postBtn {
-  text-align: right;
-  margin-right: 15%;
-}
-
-.postBtn button {
-  background-color: #1bb561;
-  border-radius: 15px;
-  padding: 8px;
-  width: 15%;
+.descriptionBlock {
+    padding: 10px;
 }

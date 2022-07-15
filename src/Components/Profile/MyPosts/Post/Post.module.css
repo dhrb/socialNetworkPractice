@@ -1,0 +1,13 @@
+.post {
+    margin: 0;
+}
+
+.container {
+    padding: 10px;
+}
+
+.postImg {
+    border-radius: 25px;
+    width: 10%;
+    margin-right: 15px;
+}
